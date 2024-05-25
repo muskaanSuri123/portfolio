@@ -53,6 +53,7 @@ export const ContactForm = () =>{
     return( 
         <div className="contactForm"  id="contactF">
               <h2>let's connect</h2>
+              <p>say hello, I'm only a message away</p>
             <Container className="contactContainer">
               
                <div className="cImg"> <img src={cam}></img></div>

@@ -24,8 +24,10 @@ export const Skills = () => {
       items: 1,
     },
   };
-  return <section>
+  return <section 
+  className="skillSec">
      <h1 className="skillHeading">Skills</h1>
+     <p className="data">Welcome to my skills showcase! Here, I've curated a comprehensive list of my proficiencies and competencies,  diverse skill set and expertise. </p>
     <Container className="skill" id="skills">
    
           <div className="skill-bx">

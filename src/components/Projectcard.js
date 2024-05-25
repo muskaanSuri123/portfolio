@@ -5,7 +5,7 @@ export const Projectcard=({
 })=>{ 
 
     return( 
-        <Col>
+        <Col className='pbox'>
         <div className="proj-imgbx">
             <a href={link}>
             <img src={imgUrl} className='cardimag'></img>

@@ -52,11 +52,13 @@ export const Banner = () => {
             <span >Welcome to  portfolio</span>
             <span className="tag-line">You can call me Muskaan </span>
             <h1>{` I am a Frontend `}<span>{text}</span></h1>
-            <p>| am a collaborative team player who
-thrives in fast-paced environments. | have experience working with
-designers and back-end developers to translate wireframes and mockups into
-pixel-perfect, performant web applications.</p>
-            <div><button  id="bannerbtnn"><span>lets'connect</span></button></div>
+            <p> Highly motivated and energetic individual who have a great passion
+and love for coding and development . I have successfully
+leveraged my proficiency in React.js and JavaScript to develop responsive
+user interfaces and interactive features creatinve visually appealing websites.
+In addition to my technical skills, I am a collaborative team player who
+loves to work and contribute and thrive in fast-paced environments.</p>
+            <div><a href="#contactF"><button  id="bannerbtnn"><span>lets'connect</span></button></a></div>
           </div>
           <div className="imgsec" >
             <img className="bulb" src={bulb}></img>
