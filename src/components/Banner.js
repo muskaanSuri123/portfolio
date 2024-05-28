@@ -8,7 +8,6 @@ export const Banner = () => {
   const toRotate = ["web developer", "Web Designer", "UX UI designer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  console.log(delta);
   const period = 2000;
 
   useEffect(() => {
@@ -22,7 +21,6 @@ export const Banner = () => {
 
   const tick = () => {
     let i = loopNum % toRotate.length;
-    console.log(loopNum);
     let fullText = toRotate[i];
     let updateText = isDeleting
       ? fullText.substring(0, text.length - 1)
@@ -53,9 +51,9 @@ export const Banner = () => {
             <span className="tag-line">You can call me Muskaan </span>
             <h1>{` I am a Frontend `}<span>{text}</span></h1>
             <p> Highly motivated and energetic individual who have a great passion
-and love for coding and development . I have successfully
+and love for coding and development .successfully
 leveraged my proficiency in React.js and JavaScript to develop responsive
-user interfaces and interactive features creatinve visually appealing websites.
+user interfaces and interactive features creatnive visually appealing websites.
 In addition to my technical skills, I am a collaborative team player who
 loves to work and contribute and thrive in fast-paced environments.</p>
             <div><a href="#contactF"><button  id="bannerbtnn"><span>lets'connect</span></button></a></div>

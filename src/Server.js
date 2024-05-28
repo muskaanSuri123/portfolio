@@ -9,6 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(3000, () => console.log("Server Running"));
+const fullUrl = req.protocol + '://' + req.get('host');
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
@@ -28,7 +29,18 @@ contactEmail.verify((error) => {
   }
 });
 
-router.post("/contact", (req, res) => {
+
+
+app.get("/", (req, res) => {
+  // Static URL value
+  const fullUrl = req.protocol + '://' + req.get('host');
+  
+  // Sending the static URL value as part of the response body
+  res.json({ url: fullUrl });
+});
+console.log(fullUrl);
+
+app.post(`${fullUrl}/contact`, (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;

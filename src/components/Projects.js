@@ -8,24 +8,25 @@ import img from "../assets/ss.png"
 import img2 from "../assets/penpal123.png"
 import img4 from "../assets/ss4.png"
 import img3 from "../assets/atm.png"
+import img5 from "../assets/yyy.png"
 import Container from "react-bootstrap/Container";
 import { Projectcard } from "./Projectcard";
 
 export const Projects = () => {
   const WebDev = [
     {
-      title: "spacePrograms",
-      description: "website showcasing succesfull rocket launch",
+      title: "movie mania ",
+      description: "movie app allows you to search your movie and add to fav list and save it in localhost ",
       technology: "ReactJs",
-      link:"https://muskaansuri123.github.io/spaceprogram/",
-      imgUrl:  img,
+      link:"https://muskaansuri123.github.io/movieMania/",
+      imgUrl:  img5,
     },
     {
-      title: "weather app",
-      description: "fetch weather data along with map",
+      title: "space programs",
+      description: "website showcasing succesfull rocket launch",
       link:"https://muskaansuri123.github.io/spaceprogram/",
-      technology: "Swift",
-      imgUrl: Projimg1,
+      technology: "ReactJs",
+      imgUrl:  img,
     },
   ];
   const UXUI = [

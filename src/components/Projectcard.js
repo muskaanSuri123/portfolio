@@ -12,7 +12,7 @@ export const Projectcard=({
           
             <div className="projText"> 
          <h4>{title}</h4>
-         <p>{technology}</p>
+         <p className='technology'>{technology}</p>
          <p>{description}</p>
          
         </div>

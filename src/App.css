@@ -26,7 +26,7 @@ body {
   /* background-image: url(../src/assets/bg.jpg); */
   background: rgb(74,20,164);
   background: rgb(74,20,164);
-  background: linear-gradient( rgba(74,20,164,1) 0%, rgba(81, 43, 106, 0.789) 53%, rgb(12, 97, 125) 87% , rgba(74,20,164,1));
+  background: linear-gradient( rgb(92, 29, 193) 0%, rgba(81, 43, 106, 0.789) 53%, rgb(12, 97, 125) 87% , rgba(74,20,164,1));
   color: #fff !important;
   font-family: "Roboto Mono", sans-serif !important;
 
@@ -147,8 +147,13 @@ h6 {
    text-decoration: none;
  
 }
+.navbar-nav .nav-link.active {
+  color: yellow;
+}
 
-
+.active-navbarLink{
+  color: yellow !important;
+}
 
 
 .navbar-nav .navbarLink.nav-link:hover,
@@ -301,7 +306,9 @@ display: flex;
   max-width: 600px;
  }
 .banner{ 
-  margin-top: 140px;
+  margin-top: 30px;
+
+  padding-top: 50px;
 }
 
 .navbar-text button {
@@ -439,11 +446,11 @@ display: flex;
 }
 
 .skill-bx{ 
-  background : #397bb9ce;
+  background : linear-gradient(90deg ,#5686b3df, #2e6aa2df) ;
   border-radius : 64px; 
   z-index: 20;
   text-align: center;
-  padding: 40px 40px;
+  padding: 50px 50px;
   width: 90%;
   margin-top: 30px;
   display: flex;
@@ -456,13 +463,13 @@ display: flex;
 } 
 
 .skill-bx:hover{ 
-  background : #3274b1df;
+  background : linear-gradient(120deg ,#5686b3df, #2e6aa2df);
   transition: all  ease-in-out;
 }
 
 
 .skillHeading{ 
- padding-top:120px ;
+ padding-top:40px ;
 
 }
 
@@ -515,7 +522,7 @@ display: flex;
   left: 0;
   z-index: 1;
   /* background: rgba(113, 74, 3, 0.626); */
-background: linear-gradient( rgba(78,3,113,0.7805716036414566) 0%, rgba(84,137,242,0.7833727240896359) 73%, rgba(0,212,255,0.7777704831932774) 100%);
+background: linear-gradient( rgba(78, 3, 113, 0.946) 0%, rgba(84, 137, 242, 0.942) 73%, rgba(0, 213, 255, 0.942) 100%);
   transition: 0.4s ease-in-out; 
   position: absolute;
   border-radius: 20px;
@@ -554,22 +561,30 @@ transition: all 2s ease-in-out ;
 z-index: 2;
 
 
-}
+} 
 
 .proj-imgbx:hover .projText{ 
 
-  display: block;
+  
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
   top: 0;
 
 }
  
-
+.projText  .technology  { 
+  background-color: rgb(198, 186, 17);
+  width: 200px;
+  border-radius: 5px ;
+}
 
 .skill-slider .item img{ 
   width: 50%;
   margin: 0 auto 15px auto;
   z-index: 40;
   transition: all .5s ease;
+  box-shadow: #9f31c1;
  
 }
 
