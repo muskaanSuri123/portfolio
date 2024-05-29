@@ -9,14 +9,13 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(3000, () => console.log("Server Running"));
-const fullUrl = req.protocol + '://' + req.get('host');
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
 const contactEmail = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: "********@gmail.com",
+    user: "muskaansuri004@gmail.com",
     pass: ""
   },
 });
@@ -29,25 +28,14 @@ contactEmail.verify((error) => {
   }
 });
 
-
-
-app.get("/", (req, res) => {
-  // Static URL value
-  const fullUrl = req.protocol + '://' + req.get('host');
-  
-  // Sending the static URL value as part of the response body
-  res.json({ url: fullUrl });
-});
-console.log(fullUrl);
-
-app.post(`${fullUrl}/contact`, (req, res) => {
+router.post("/contact", (req, res) => {
   const name = req.body.firstName + req.body.lastName;
   const email = req.body.email;
   const message = req.body.message;
   const phone = req.body.phone;
   const mail = {
     from: name,
-    to: "********@gmail.com",
+    to: "muskaansuri004@gmail.com",
     subject: "Contact Form Submission - Portfolio",
     html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
