@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d33260b5.css",
+    "main.js": "/static/js/main.1fab54af.js",
+    "static/media/Saly-12 (5).svg": "/static/media/Saly-12 (5).5164b9a5176cc8a1fd167bad59b79248.svg",
+    "static/media/Saly-43.svg": "/static/media/Saly-43.f53bdf29410a849391f1e8d8fe2d9a3e.svg",
+    "static/media/Saly-21.svg": "/static/media/Saly-21.56a0da31d5a29d134246bcf079743ee3.svg",
+    "static/media/Saly-35.svg": "/static/media/Saly-35.161f4ceaedd143b4052c5d2f6c602cbf.svg",
+    "static/media/yyy.png": "/static/media/yyy.f367ae46ec16fd30bc1e.png",
+    "static/media/ss4.png": "/static/media/ss4.2565dc4d318f6b9a18ea.png",
+    "static/media/atm.png": "/static/media/atm.007dc042ac9d6e999fe5.png",
+    "static/media/ss.png": "/static/media/ss.47c0bbc35248de61819d.png",
+    "static/media/img.png": "/static/media/img.ba8ca1095992de3ffa4d.png",
+    "static/media/penpal123.png": "/static/media/penpal123.ad08f4009d540d77841e.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/github.svg": "/static/media/github.e7e2bc8e3b94958f09a23ee8a5aaae7a.svg",
+    "static/media/intagram.svg": "/static/media/intagram.edf2b051f71033a57293281aac84b0ec.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.edf117dd696e40cba6f1f0b7cf7cabd1.svg",
+    "main.d33260b5.css.map": "/static/css/main.d33260b5.css.map",
+    "main.1fab54af.js.map": "/static/js/main.1fab54af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d33260b5.css",
+    "static/js/main.1fab54af.js"
+  ]
+}
