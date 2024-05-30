@@ -26,35 +26,55 @@ export const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch("http://localhost:3000/");
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      const result = await response.json();
-      console.log(result);
-    } catch (error) {
-      console.error("Error:", error);
-    }
+    // try {
+    //   const response = await fetch("http://localhost:3000/");
+    //   if (!response.ok) {
+    //     throw new Error("Network response was not ok");
+    //   }
+    //   const result = await response.json();
+    //   console.log(result);
+    // } catch (error) {
+    //   console.error("Error:", error);
+    // }
     setButtonText("sending...");
-    let response = await fetch("http://localhost:3000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
+    setFormDetails ({  firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",})
+    // let headers = new Headers();
+
+    // headers.append('Access-Control-Allow-Origin', 'http://localhost:3000');
+    // headers.append('Access-Control-Allow-Credentials', 'true');
+
+    // let response = await fetch("http://localhost:3000", {
+    //   method: "POST",
+    // });
+
+    // setButtonText("Send");
+
+    // let result = response.json();
+    // console.log(result);
+    // {let response = await fetch("http://localhost:3000/contact", {
+    //   method: "POST",
+    //   headers: {
+    //     "Content-Type": "application/json;charset=utf-8",
+    //   },
+    //   body: JSON.stringify(formDetails),
+    // });
 
     setButtonText("Send");
 
-    let result = response.json();
-    console.log(result);
-    setFormDetails(formInitialDeta);
-    if (result.code === 200) {
-      setStatus({ success: true, message: "Message sent seccessfully" });
-    } else {
-      setStatus({ success: false, message: "something went wrong" });
-    }
+  //   let result = response.json();
+  //   console.log(result);
+  //   setFormDetails(formInitialDeta);
+  //   if (result.code === 200) {
+  //     setStatus({ success: true, message: "Message sent seccessfully" });
+  //   } else {
+  //     setStatus({ success: false, message: "something went wrong" });
+  //   }
+  // }
+
   };
   return (
     <div className="contactForm" id="contactF">
